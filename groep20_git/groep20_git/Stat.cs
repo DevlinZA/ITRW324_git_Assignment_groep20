@@ -28,6 +28,20 @@ namespace groep20_git
 
         }
 
+        public int addMax(int[] numbers)
+        {
+            int max = 0;
+            int number = numbers.Count();
+            for (int i = 0; i < number; i++)
+            {
+                if (max <= numbers[i])
+                {
+                    max = numbers[i];
+                }             
+            }
+            return max;
+        }
+
         private int[] ranNums;
         private Random ran = new Random();
         private double Answer;
