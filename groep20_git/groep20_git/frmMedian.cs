@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace groep20_git
 {
-    public partial class Form1 : Form
+    public partial class frmMedian : Form
     {
-        public Form1()
+        public frmMedian()
         {
             InitializeComponent();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            frmMedian frm = new frmMedian();
-            frm.Show();
         }
     }
 }
