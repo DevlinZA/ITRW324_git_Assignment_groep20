@@ -20,6 +20,7 @@ namespace groep20_git
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             clsMedian cls = new clsMedian();
+            Stat clsStat = new Stat();
             string list = "";
             string median;
             TestNumber tn = new TestNumber();
@@ -33,7 +34,7 @@ namespace groep20_git
                     list += arrlist[i] + "\r\n";
                 }
 
-                median = Convert.ToString(cls.calcMedian(arrlist));
+                median = Convert.ToString(clsStat.calcMedian(arrlist));
 
                 MessageBox.Show("The list is: \r\n" + list + "\r\n The median is " + median);
             }
