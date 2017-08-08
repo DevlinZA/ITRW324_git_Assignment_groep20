@@ -22,5 +22,10 @@ namespace groep20_git
             frmMedian frm = new frmMedian();
             frm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
