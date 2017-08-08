@@ -17,12 +17,16 @@ namespace groep20_git
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            RuanForm RF = new RuanForm();
-            RF.Show();
+            frmMedian frm = new frmMedian();
+            frm.Show();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmJaco fJaco = new frmJaco();
+            fJaco.Show();
         }
     }
 }
