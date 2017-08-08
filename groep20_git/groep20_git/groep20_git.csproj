@@ -47,20 +47,42 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddMax.cs" />
+    <Compile Include="clMIN.cs" />
+    <Compile Include="clsMedian.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmJaco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJaco.Designer.cs">
+      <DependentUpon>frmJaco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMedian.Designer.cs">
+      <DependentUpon>frmMedian.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RuanForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RuanForm.Designer.cs" />
+    <Compile Include="RuanForm.Designer.cs">
+      <DependentUpon>RuanForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJaco.resx">
+      <DependentUpon>frmJaco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedian.resx">
+      <DependentUpon>frmMedian.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -71,7 +93,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RuanForm.resx" />
+    <EmbeddedResource Include="RuanForm.resx">
+      <DependentUpon>RuanForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
