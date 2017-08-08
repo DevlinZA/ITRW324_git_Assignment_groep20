@@ -35,5 +35,12 @@ namespace groep20_git
             RuanForm RF = new RuanForm();
             RF.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Andries Bester 24249270");
+            AverageForm AF = new AverageForm();
+            AF.ShowDialog();
+        }
     }
 }
