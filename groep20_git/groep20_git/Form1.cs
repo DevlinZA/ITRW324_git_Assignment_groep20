@@ -12,15 +12,15 @@ namespace groep20_git
 {
     public partial class Form1 : Form
     {
-        frmJaco fJaco = new frmJaco();
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            fJaco.Show();
+            frmMedian frm = new frmMedian();
+            frm.Show();
         }
     }
 }
