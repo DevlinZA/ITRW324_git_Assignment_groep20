@@ -17,12 +17,19 @@ namespace groep20_git
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
             RuanForm RF = new RuanForm();
             RF.Show();
 
+=======
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmMedian frm = new frmMedian();
+            frm.Show();
+>>>>>>> 15f1e71e3df21d2631724d6b2ace1291cb3bd0c7
         }
     }
 }
