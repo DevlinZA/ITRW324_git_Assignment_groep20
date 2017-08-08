@@ -13,6 +13,11 @@ namespace groep20_git
     public partial class frmJaco : Form
     {
         clMIN cmin = new clMIN();
+        Stat stt = new Stat();
+        TestNumber tstNum = new TestNumber();
+
+        
+        
 
         public frmJaco()
         {
@@ -21,7 +26,14 @@ namespace groep20_git
 
         private void button1_Click(object sender, EventArgs e)
         {
-            cmin.numGen(Convert.ToInt16(txt1.Text));
+           if( tstNum.test(Convert.ToInt16(txt1.Text)))
+            {
+                stt.numGen(Convert.ToInt16(txt1.Text));
+            }else
+            {
+                MessageBox.Show(" Skies die getal is nie tussen 5 en 20 nie");
+            }
+            
         }
     }
 }
