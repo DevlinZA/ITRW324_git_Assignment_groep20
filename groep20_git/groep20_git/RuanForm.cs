@@ -17,16 +17,16 @@ namespace groep20_git
             InitializeComponent();
         }
 
-        //private void button2_Click(object sender, EventArgs e)
-        //{
-        //    this.Hide();
-        //    Form1 F1 = new Form1();
-        //    F1.Show();
-        //}
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 F1 = new Form1();
+            F1.Show();
+        }
 
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    AddMax AM = new AddMax(Convert.ToInt16(textBox2.Text));
-        //}
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddMax AM = new AddMax(Convert.ToInt16(textBox2.Text));
+        }
     }
 }
