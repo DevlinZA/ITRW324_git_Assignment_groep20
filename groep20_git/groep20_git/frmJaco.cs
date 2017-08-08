@@ -12,9 +12,16 @@ namespace groep20_git
 {
     public partial class frmJaco : Form
     {
+        clMIN cmin = new clMIN();
+
         public frmJaco()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            cmin.numGen(Convert.ToInt16(txt1.Text));
         }
     }
 }
