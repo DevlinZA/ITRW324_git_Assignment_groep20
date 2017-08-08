@@ -16,5 +16,11 @@ namespace groep20_git
         {
             InitializeComponent();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmMedian frm = new frmMedian();
+            frm.Show();
+        }
     }
 }
