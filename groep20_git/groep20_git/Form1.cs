@@ -25,7 +25,8 @@ namespace groep20_git
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            frmJaco fJaco = new frmJaco();
+            fJaco.Show();
         }
     }
 }
