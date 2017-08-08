@@ -10,17 +10,18 @@ using System.Windows.Forms;
 
 namespace groep20_git
 {
-    public partial class Form1 : Form
+    public partial class frmJaco : Form
     {
-        frmJaco fJaco = new frmJaco();
-        public Form1()
+        clMIN cmin = new clMIN();
+
+        public frmJaco()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            fJaco.Show();
+            cmin.numGen(Convert.ToInt16(txt1.Text));
         }
     }
 }
