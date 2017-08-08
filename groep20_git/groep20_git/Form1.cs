@@ -17,7 +17,7 @@ namespace groep20_git
             InitializeComponent();
         }
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
         private void button4_Click(object sender, EventArgs e)
         {
             frmMedian frm = new frmMedian();
@@ -30,9 +30,9 @@ namespace groep20_git
             fJaco.Show();
         }
 
-=======
-<<<<<<< HEAD
->>>>>>> feature/Max
+//=======
+//<<<<<<< HEAD
+//>>>>>>> feature/Max
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -40,20 +40,13 @@ namespace groep20_git
             RF.Show();
         }
 
-<<<<<<< HEAD
+        //<<<<<<< HEAD
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Andries Bester 24249270");
             AverageForm AF = new AverageForm();
             AF.ShowDialog();
-=======
-=======
-        private void button4_Click(object sender, EventArgs e)
-        {
-            frmMedian frm = new frmMedian();
-            frm.Show();
->>>>>>> 15f1e71e3df21d2631724d6b2ace1291cb3bd0c7
->>>>>>> feature/Max
         }
+
     }
 }
