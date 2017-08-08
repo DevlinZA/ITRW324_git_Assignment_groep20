@@ -82,6 +82,8 @@
     <Compile Include="RuanForm.Designer.cs">
       <DependentUpon>RuanForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Stat.cs" />
+    <Compile Include="TestNumber.cs" />
     <EmbeddedResource Include="AverageForm.resx">
       <DependentUpon>AverageForm.cs</DependentUpon>
     </EmbeddedResource>
