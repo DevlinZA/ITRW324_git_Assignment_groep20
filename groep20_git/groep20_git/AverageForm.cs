@@ -36,10 +36,5 @@ namespace groep20_git
         {
             this.Close();
         }
-
-        private void btnBack_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }
