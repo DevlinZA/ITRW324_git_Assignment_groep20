@@ -24,23 +24,36 @@ namespace groep20_git
             string list = "";
             string median;
             TestNumber tn = new TestNumber();
-            int n = Convert.ToInt16(textBox1.Text);
-            if (tn.test(n))
+            
+            try
             {
-                int[] arrlist = cls.generate(n);
-
-                for (int i = 0; i < n; i++)
+                string x = textBox1.Text;
+                
+                
+                
+                int n = Convert.ToInt16(textBox1.Text);
+                if (tn.test(n))
                 {
-                    list += arrlist[i] + "\r\n";
+                    int[] arrlist = cls.generate(n);
+
+                    for (int i = 0; i < n; i++)
+                    {
+                        list += arrlist[i] + "\r\n";
+                    }
+
+                    median = Convert.ToString(clsStat.calcMedian(arrlist));
+
+                    MessageBox.Show("The list is: \r\n" + list + "\r\n The median is " + median);
                 }
-
-                median = Convert.ToString(clsStat.calcMedian(arrlist));
-
-                MessageBox.Show("The list is: \r\n" + list + "\r\n The median is " + median);
+                else
+                {
+                    MessageBox.Show("Choose a number between 5 and 20");
+                }
             }
-            else
+            catch(Exception ex)
             {
-                MessageBox.Show("Choose a number between 5 and 20");
+                MessageBox.Show(ex.Message);
+
             }
         }
     }
