@@ -26,13 +26,21 @@ namespace groep20_git
 
         private void button1_Click(object sender, EventArgs e)
         {
-           if( tstNum.test(Convert.ToInt16(txt1.Text)))
+            try
             {
-                stt.numGen(Convert.ToInt16(txt1.Text));
-            }else
+                if (tstNum.test(Convert.ToInt16(txt1.Text)))
+                {
+                    stt.numGen(Convert.ToInt16(txt1.Text));
+                }
+                else
+                {
+                    MessageBox.Show(" Skies die getal is nie tussen 5 en 20 nie");
+                }
+            }catch(Exception ex)
             {
-                MessageBox.Show(" Skies die getal is nie tussen 5 en 20 nie");
+                MessageBox.Show(ex.Message);
             }
+          
             
         }
     }
