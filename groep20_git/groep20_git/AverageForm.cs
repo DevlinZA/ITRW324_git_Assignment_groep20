@@ -20,19 +20,24 @@ namespace groep20_git
         private void btnGetAverage_Click(object sender, EventArgs e)
         {
             int amountNums = Convert.ToInt32(txtNum.Text);
-            NumGenAverage numGen = new NumGenAverage();
+            Stat numGen = new Stat();
 
-            //TestNumber tester = new TestNumber();
-            //if (tester.test(amountNums) == true)
-            //{
+            TestNumber tester = new TestNumber();
+            if (tester.test(amountNums) == true)
+            {
             MessageBox.Show("The average of " + txtNum.Text + " numbers is: " + numGen.randomAvg(amountNums));
-            //}
+            }
 
-            //else
-            //MessageBox.Show("Number out off bounds");
+            else
+            MessageBox.Show("Number out off bounds");
         }
 
         private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBack_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
