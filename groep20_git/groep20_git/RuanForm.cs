@@ -29,17 +29,27 @@ namespace groep20_git
             Stat clsStat = new Stat();
             TestNumber tstNum = new TestNumber();
             AddMax AM = new AddMax();
-            string max;
-            int n = Convert.ToInt16(textBox2.Text);
-            if (tstNum.test(n))
+            try
             {
-                int[] arrlist = AM.generate(n);
-                max = Convert.ToString(clsStat.addMax(arrlist));
-                MessageBox.Show("The maximum value for the list is: " + max);
+                string x = textBox2.Text;
+
+                string max;
+                int n = Convert.ToInt16(textBox2.Text);
+                if (tstNum.test(n))
+                {
+                    int[] arrlist = AM.generate(n);
+                    max = Convert.ToString(clsStat.addMax(arrlist));
+                    MessageBox.Show("The maximum value for the list is: " + max);
+                }
+                else
+                {
+                    MessageBox.Show("Please choose a number between 5 and 20");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Please choose a number between 5 and 20");
+                MessageBox.Show(ex.Message);
+
             }
         }
     }
