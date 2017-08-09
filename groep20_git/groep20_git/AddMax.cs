@@ -9,23 +9,15 @@ namespace groep20_git
 {
     class AddMax
     {
-        public AddMax(int number)
+        public int[] generate(int n)
         {
-            int max = 0;
-            Random rand = new Random();
-            int[] numbers = new int[number];
-            for (int i = 0; i < number; i++)
+            Random rnd = new Random();
+            int[] list = new int[n];
+            for (int i = 0; i < n; i++)
             {
-                numbers[i] = rand.Next(101);
+                list[i] = rnd.Next(0, 100);
             }
-            for (int i = 0; i < number; i++)
-            {
-                if (max <= numbers[i])
-                {
-                    max = numbers[i];
-                }
-            }
-            MessageBox.Show("The max value for the generated numbers is: " + Convert.ToString(max));
+            return list;
         }
     }
 }

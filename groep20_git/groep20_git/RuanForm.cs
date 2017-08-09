@@ -26,7 +26,21 @@ namespace groep20_git
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AddMax AM = new AddMax(Convert.ToInt16(textBox2.Text));
+            Stat clsStat = new Stat();
+            TestNumber tstNum = new TestNumber();
+            AddMax AM = new AddMax();
+            string max;
+            int n = Convert.ToInt16(textBox2.Text);
+            if (tstNum.test(n))
+            {
+                int[] arrlist = AM.generate(n);
+                max = Convert.ToString(clsStat.addMax(arrlist));
+                MessageBox.Show("The maximum value for the list is: " + max);
+            }
+            else
+            {
+                MessageBox.Show("Please choose a number between 5 and 20");
+            }
         }
     }
 }
